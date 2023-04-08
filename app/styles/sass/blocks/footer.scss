@@ -1,0 +1,160 @@
+.footer {
+    @media screen and (min-width: 1200px) {
+        padding: 100px 0;
+    }
+
+    background: #0A142F;
+    color: #fff;
+
+    &__logo {
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+        opacity: 0.5;
+        margin-bottom: 2rem;
+    }
+
+    &__mail {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:before {
+            content: url(../images/dist/sms-edit.svg);
+            margin-right: 12px;
+        }
+
+
+    }
+
+    &__inner {
+        // display: flex;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .menu {
+            li {
+                margin-top: 2rem;
+            }
+
+            a {
+                opacity: 0.65;
+                font-size: 15px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--wide {
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+
+        &--social {
+            .menu {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0.7;
+        font-size: 14px;
+        padding-top: 47px;
+        margin-top: 72px;
+        border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
+    }
+
+    @media screen and (max-width: 991px) {
+        &__info {
+            margin-bottom: 1.5rem;
+        }
+
+        &__subtitle {
+            margin-bottom: 1.5rem;
+        }
+
+        &__navigation {
+            .menu {
+                li {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+        &__bottom {
+            padding-top: 2rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        &__subtitle {
+            margin-bottom: 1rem;
+        }
+
+        &__navigation {
+            &:not(:last-of-type) {
+                margin-bottom: 1.5rem;
+            }
+
+            .menu {
+                li {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        &__bottom {
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__navigation {
+            &--wide {
+                .menu {
+                    li {
+                        width: auto;
+
+                        &:not(:last-of-type) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

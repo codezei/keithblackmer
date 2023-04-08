@@ -1,0 +1,154 @@
+.promo {
+    background-color: #FCFCFF;
+    background-image: url(../images/dist/promo-bg.png);
+    background-position: bottom 50px center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1220px) {
+        padding: 80px 0 96px;
+    }
+
+    &__title {
+        text-align: center;
+
+        margin-bottom: 0.5rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__subtitle {
+        text-align: center;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+
+    &-card {
+        max-width: 530px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3rem 4rem 3.5rem;
+        background: #FFFFFF;
+        /* Shadow / 1 */
+
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0898984);
+        border-radius: 4px;
+
+        &__title {
+            padding-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(217, 217, 223, 0.4);
+        }
+
+        &__list {
+            margin: 0 0 88px;
+            padding: 0;
+            list-style: none;
+
+            &-item {
+                position: relative;
+                padding-left: 2.5rem;
+                color: #4D4D60;
+                font-size: 18px;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 15px;
+                    height: 11px;
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.7319 0.295798C13.5442 0.106486 13.2886 0 13.0219 0C12.7553 0 12.4997 0.106486 12.3119 0.295798L4.86195 7.7558L1.73195 4.6158C1.46936 4.36214 1.09139 4.26784 0.740418 4.36842C0.389448 4.469 0.118797 4.74918 0.0304176 5.10342C-0.0579621 5.45766 0.049356 5.83214 0.311946 6.0858L4.15195 9.9258C4.33971 10.1151 4.59531 10.2216 4.86195 10.2216C5.12858 10.2216 5.38418 10.1151 5.57195 9.9258L13.7319 1.7658C13.9372 1.57648 14.0539 1.31 14.0539 1.0308C14.0539 0.751599 13.9372 0.485114 13.7319 0.295798Z' fill='%23235AF9'/%3E%3C/svg%3E%0A");
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+
+        &-card {
+            padding: 3rem;
+
+            &__title {
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            &__list {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+
+        &-card {
+            padding: 2.5rem;
+
+
+            &__list {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+
+        &-card {
+            padding: 1.5rem;
+
+
+            &__list {
+                margin-bottom: 1.5rem;
+
+                &-item {
+                    padding-left: 2rem;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &-card {
+            padding: 1rem;
+
+
+        }
+    }
+}
+
+.label {
+    background: #EBF1FF;
+    border-radius: 3px;
+    color: #235AF9;
+    font-size: 16px;
+    padding: 3px 16px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: bottom;
+}

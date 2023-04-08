@@ -1,0 +1,96 @@
+// GENERAL PROJECT STYLES
+
+
+.block {
+    padding: 80px 0;
+
+    @media screen and (max-width: 1199px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 0;
+    }
+}
+
+:root {
+    scroll-behavior: unset;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: unset;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: unset;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.btn {
+    text-align: center;
+    background: #EBF1FF;
+    border-radius: 4px;
+    color: #235AF9;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 400ms;
+    line-height: 1.5;
+
+    &:hover {
+        background: #0040ff;
+        color: #fff;
+    }
+
+    &--big {
+        font-size: 20px;
+        padding: 1rem 4.5rem;
+    }
+
+    &--blue {
+        background: #235AF9;
+        color: #fff;
+
+        &:hover {
+            background: #0040ff;
+        }
+    }
+}
